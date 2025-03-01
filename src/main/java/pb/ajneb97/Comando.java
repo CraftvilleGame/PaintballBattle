@@ -282,8 +282,8 @@ public class Comando implements CommandExecutor {
 		   }else if(args[0].equalsIgnoreCase("createtophologram")) {
 			   // /paintball createtophologram <name> kills/wins <global/monthly/weekly>
 			   if(jugador.isOp() || jugador.hasPermission("paintball.admin")) {
-				   if (plugin.getServer().getPluginManager().getPlugin("HolographicDisplays") == null) {
-					   jugador.sendMessage(prefix+ChatColor.translateAlternateColorCodes('&', "&cYou need HolographicDisplays plugin to use this feature."));  
+				   if (plugin.getServer().getPluginManager().getPlugin("DecentHolograms") == null) {
+					   jugador.sendMessage(prefix+ChatColor.translateAlternateColorCodes('&', "&cYou need DecentHolograms plugin to use this feature."));
 				        return true;
 				   }
 				   if(args.length >= 3) {
@@ -321,8 +321,8 @@ public class Comando implements CommandExecutor {
 		   }else if(args[0].equalsIgnoreCase("removetophologram")) {
 			   // /paintball removetophologram <name>
 			   if(jugador.isOp() || jugador.hasPermission("paintball.admin")) {
-				   if (plugin.getServer().getPluginManager().getPlugin("HolographicDisplays") == null) {
-					   jugador.sendMessage(prefix+ChatColor.translateAlternateColorCodes('&', "&cYou need HolographicDisplays plugin to use this feature."));  
+				   if (plugin.getServer().getPluginManager().getPlugin("DecentHolograms") == null) {
+					   jugador.sendMessage(prefix+ChatColor.translateAlternateColorCodes('&', "&cYou need DecentHolograms plugin to use this feature."));
 				        return true;
 				   }
 				   if(args.length >= 2) {
